@@ -11,4 +11,5 @@ app.mixin(VueHeadMixin);
 app.use(head);
 app.use(store);
 app.use(router);
+
 app.mount("#app");
