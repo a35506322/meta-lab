@@ -3,8 +3,27 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: "test title",
+      meta: [
+        { name: "description", content: "This is an example" },
+        { property: "og:title", content: "Hello og:title" },
+        {
+          property: "og:image",
+          content:
+            "https://yesgoimages.s3.ap-northeast-1.amazonaws.com/Original/P221012000027.jpg",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
