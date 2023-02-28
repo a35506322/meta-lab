@@ -7,8 +7,8 @@ import { createHead, VueHeadMixin } from "@vueuse/head";
 const app = createApp(App);
 const head = createHead();
 
-app.use(store);
-app.use(router);
 app.mixin(VueHeadMixin);
 app.use(head);
+app.use(store);
+app.use(router);
 app.mount("#app");

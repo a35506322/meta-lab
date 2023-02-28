@@ -13,10 +13,10 @@ import { useHead } from "@vueuse/head";
 export default {
   setup() {
     useHead({
-      title: `Hello world: 123`,
+      title: () => `Hello world: 123`,
       meta: [
-        { name: "description", content: "This is an example" },
-        { property: "og:title", content: "Hello world" },
+        { name: "description", content: () => `Hello world: 123` },
+        { property: "og:title", content: () => `Hello world: 123` },
         {
           property: "og:image",
           content:
